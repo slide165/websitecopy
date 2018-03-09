@@ -1,0 +1,33 @@
+
+#contact-bar [class*='col-'] {
+  margin-top: 0;
+  padding: 1em 0;
+}
+
+#contact-bar {
+  background-color: whitesmoke;
+  border-radius: 0 0 4px 4px;
+  height: 20em;
+  margin-bottom: 2em;
+  padding: 1em 0;
+  text-align: left;
+}
+
+.hide-contact-bar {
+  margin-top: -20em;
+  transition: margin-top .3s ease-out;
+}
+
+.show-contact-bar {
+  margin-top: 0;
+  transition: margin-top .3s ease-out;
+}
+
+@media (min-width: 64em) {
+  #contact-bar {
+    height: 7em;
+  }
+  .hide-contact-bar {
+    margin-top: -7em;
+  }
+}
